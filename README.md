@@ -106,6 +106,6 @@ The analysis will use application data collected from Alphabet Soup's business t
 
 
 ## Summary
-Despite several methods in an attempt to optimize the model while keeping as much of the original dataset as possible, this model was only able to provide an accuracy of 72.9%, not sufficient for the target of 75%. This
+Despite application of several methods in an attempt to optimize the model while keeping as much of the original dataset as possible, this model was only able to provide an accuracy of 72.9%, not sufficient for the target of 75%. This
 
 It is possible that further manipulation of the dataset, scaling, or normalization may provide a better performance to meet the target. It is recommended that the dataset be applied to a DecisionTree classifier model before further attempts at neural network models, as this may yield additional insights into the variables in the features of the data which have the largest impact on model performance. 
