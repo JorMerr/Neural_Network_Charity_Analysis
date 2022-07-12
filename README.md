@@ -86,15 +86,18 @@ The analysis will use application data collected from Alphabet Soup's business t
 
                 - Results show that after approximately 17hrs of iteration, the model was only able to provide an accuracy of 72.9%.
 
-                ![Optimization 7 Tuner Search]()
+                ![Optimization 7 Tuner Search](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/opt7-tuner.JPG)
 
                 - The best hyperparameters of the model are shown here:
 
-                ![Optimization 7 Hyperparameters]()
+                ![Optimization 7 Hyperparameters](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/opt7-hp.JPG)
 
                 - The final accuracy of the model was 72.96%, not sufficient to meet the criteria of 75%.
 
-                ![Optimization 7 Accuracy]()
+                ![Optimization 7 Accuracy](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/opt7-accuracy.JPG)
 
 
 ## Summary
+Despite several methods in an attempt to optimize the model while keeping as much of the original dataset as possible, this model was only able to provide an accuracy of 72.9%, not sufficient for the target of 75%. This
+
+It is possible that further manipulation of the dataset, scaling, or normalization may provide a better performance to meet the target. It is recommended that the dataset be applied to a DecisionTree classifier model before further attempts at neural network models, as this may yield additional insights into the variables in the features of the data which have the largest impact on model performance. 
