@@ -32,11 +32,14 @@ The analysis will use application data collected from Alphabet Soup's business t
         - Output Layer:
             - 1 node
             - Sigmoid activation function
-        - ![Neural Net Model Summary](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-nn-summary.JPG)
+
+        ![Neural Net Model Summary](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-nn-summary.JPG)
 
         - These parameters were chosen to allow for the wider range of features an initial learning capacity sufficient to provide actionable steps towards optimization of the model. RELU was chosen as a means of implementing a more complex approach than simple classification, as it was initially unclear which featuers had significant impact on the target variable.
     - The initial neural network model did not achieve the desired performance of 75% accuracy, as shown here:
-        - ![Neural Net Initial Accuracy](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-initial-neural-net.JPG)
+
+        ![Neural Net Initial Accuracy](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-initial-neural-net.JPG)
+
     - The following steps were taken in an attempt to increase model performance to 75% accuracy:
 
         - A boxplot was created using the initial scaled data to determine whether significant outliers existed in the dataset and may be influencing the model.
@@ -55,19 +58,24 @@ The analysis will use application data collected from Alphabet Soup's business t
         - Optimization 3
             - A function was created to iterate through hyperparameter options of activation functions, number of nodes per layer, number of layers in the model and optimizer function when compiling.
                 - Results show minimal improvements once again with max_value of nodes equal to 60, and max_value of layers equal to 5.
+
                 ![Optimization 3 Accuracy Results](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Opt3-Keras-Tuner.JPG)
+
                 - Further manipulation of the dataset occurred after Optimization 3 in which the column SPECIAL_CONSIDERATIONS_N was removed. The removal was supported as SPECIAL_CONSIDERATIONS_Y contained binary data which reflected whether an application contained special considerations or not.
             
         - Optimization 4
             - The Keras Tuner function was altered to reduce max_value for nodes in layers to reduce potential of overfitting the model with training data.
                 - Results showed negligible improvements in model performance from previous optimization step.
+
                 ![Keras Tuner Optimization 4](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/kt.search1.JPG)
         
         - Optimization 5
             - The max_value of nodes per layer was increased to 100, the tuner epochs increased to 100, and the maximum number of hidden layers was increased to 10.
 
                 - The model's best hyperparameters are shown here:
+
                     ![Optimization 5 Hyperparameters](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/kt.hp.best1.JPG)
+
                 - Results once again showed neglibile improvement to model performance. Accuracy score still below target of 75%.
 
                 ![Optimization 5 Keras Tuner](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/opt5-Keras-Tuner.JPG)
