@@ -32,8 +32,13 @@ The analysis will use application data collected from Alphabet Soup's business t
         - Output Layer:
             - 1 node
             - Sigmoid activation function
-        - ![Neural Net Model Summary]()
-    - 
-    - 
+        - ![Neural Net Model Summary](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-nn-summary.JPG)
+
+        - These parameters were chosen to allow for the wider range of features an initial learning capacity sufficient to provide actionable steps towards optimization of the model. RELU was chosen as a means of implementing a more complex approach than simple classification, as it was initially unclear which featuers had significant impact on the target variable.
+    - The initial neural network model did not achieve the desired performance of 75% accuracy, as shown here:
+        - ![Neural Net Initial Accuracy](https://github.com/JorMerr/Neural_Network_Charity_Analysis/blob/main/Resources/img/Deliv2-initial-neural-net.JPG)
+    - The following steps were taken in an attempt to increase model performance to 75% accuracy:
+        - Optimization 1
+            
 
 ## Summary
